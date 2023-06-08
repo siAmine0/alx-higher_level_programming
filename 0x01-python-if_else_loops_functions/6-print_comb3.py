@@ -5,5 +5,6 @@
 The two digits must be different - 01 and 10 are considered identical."""
 for digit1 in range(0, 9):
     for digit2 in range(digit1 + 1, 10):
-        print("{}{}".format(digit1, digit2), end=", ")
+        if digit1 != 8 or digit2 != 9:
+            print("{}{}".format(digit1, digit2), end=", ")
 print("89")
